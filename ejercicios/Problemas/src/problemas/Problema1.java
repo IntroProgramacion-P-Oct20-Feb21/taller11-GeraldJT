@@ -16,6 +16,20 @@ public class Problema1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int[][] informacion = {{1, 2, 3}, {10, 20, 30}, {100, 200, 300}};
+        obtenerValor(informacion);
     }
-    
+    public static void obtenerValor(int [][] arreglo){
+        String cadenaF = "" ;
+        for(int fila = 0; fila < arreglo.length; fila++){
+            for(int col = 0; col < arreglo[fila].length; col++){
+                if(arreglo[fila][col] % 2 == 0) {
+                    cadenaF = String.format("%s%d\t",cadenaF, arreglo[fila][col]);    
+                }
+            }
+        }
+        System.out.printf("Los numero pares son: \n%s",cadenaF);
+    }
 }
+    
+

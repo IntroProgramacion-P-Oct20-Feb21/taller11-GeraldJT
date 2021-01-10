@@ -18,7 +18,7 @@ public class Ejemplo1 {
         // 
         int[] informacion = {10, 20, 30, 40, 50, 100};
         int suma = obtenerSumaDatos(informacion);
-        double promedio = obtenerPromedioDatos(informacion);
+        double promedio = PromedioDatos(informacion);
         System.out.printf("La suma es %d\n", suma);
         System.out.printf("El promedio es %.2f\n", promedio);
     }
@@ -31,7 +31,7 @@ public class Ejemplo1 {
         return suma;
     }
     
-    public static double obtenerPromedioDatos(int [] datos){
+    public static double PromedioDatos(int [] datos){
         int suma = 0;
         double promedio;
         for (int i = 0; i < datos.length; i++) {
